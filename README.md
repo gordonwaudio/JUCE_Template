@@ -10,7 +10,7 @@ GPL-3.0
 Update: set(CPM_DOWNLOAD_VERSION 0.42.0) to latest CPM Version on GitHub
 
 ## plugin/CMakeLists.txt
-Update YourPluginName in 2 places
+Update YourPluginName in 2nd place only - juce_add_plugin
 Update juce_add_plugin with options required
 May need to set source and include files for additional files
 Configure target_link_libraries_system 
