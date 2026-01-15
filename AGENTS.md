@@ -7,6 +7,9 @@
 - `cmake/` carries helper scripts (CPM, warnings, utilities). `libs/` is the CPM download cache. `build/` is the generated build tree (safe to delete/recreate).
 - `plugin_codes_used.txt` tracks reserved JUCE `PLUGIN_CODE` values—update when changing codes to avoid collisions.
 
+## Documentation
+- When you need JUCE references, use the Context7 MCP docs first: library `/juce-framework/juce` (or `/websites/juce` for site content) via `resolve-library-id` → `query-docs`. Avoid generic web search.
+
 ## Build, Test, and Development Commands
 - Configure: `cmake -S . -B build` (adds JUCE/GoogleTest via CPM into `libs/`).
 - Build: `cmake --build build` (produces plug-in targets under `build/` and artefacts per generator).
