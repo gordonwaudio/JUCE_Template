@@ -2,7 +2,7 @@
 
 ## Project Structure & Modules
 - `CMakeLists.txt` configures JUCE (8.0.12), GoogleTest (1.17.0), shared warnings, and adds the `plugin` and `test` targets.
-- `plugin/` holds the audio plug-in: `include/YourPluginName/` for headers, `source/` for implementation, and target wiring in `plugin/CMakeLists.txt`.
+- `plugin/` holds the audio plug-in: `include/` for headers, `source/` for implementation, and target wiring in `plugin/CMakeLists.txt`.
 - `test/` contains GoogleTest-based unit tests (`source/AudioProcessorTest.cpp`) wired via `test/CMakeLists.txt`.
 - `cmake/` carries helper scripts (CPM, warnings, utilities). `libs/` is the CPM download cache. `build/` is the generated build tree (safe to delete/recreate).
 - `plugin_codes_used.txt` tracks reserved JUCE `PLUGIN_CODE` values—update when changing codes to avoid collisions.
@@ -19,8 +19,8 @@
 ## Coding Style & Naming Conventions
 - C++20 across targets; warnings-as-errors are enforced via `PROJECT_WARNINGS_CXX`.
 - Prefer two-space indentation and brace placement consistent with existing JUCE files.
-- Keep public headers in `include/YourPluginName/`; mirror names in `source/`.
-- Update `juce_add_plugin` fields (`COMPANY_NAME`, `PLUGIN_CODE`, `PRODUCT_NAME`) and rename `YourPluginName` folders/namespaces to match the final plug-in name.
+- Keep public headers in `include/`; mirror names in `source/`.
+- Update `juce_add_plugin` fields (`COMPANY_NAME`, `PLUGIN_CODE`, `PRODUCT_NAME`).
 
 ## Testing Guidelines
 - Tests use GoogleTest (`GTest::gtest_main`). Add new cases under `test/source/` and register sources in `test/CMakeLists.txt`.

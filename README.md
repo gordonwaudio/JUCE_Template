@@ -21,9 +21,6 @@ Update plugin_codes_used.txt in JUCE_Template and push to Github
 Update project(SBSAudioPluginTemplate)
 Update cpmaddpackage with latest JUCE Version and GoogleTest version 
 
-## plugin/include/YourPluginName
-rename with plugin name
-
 ## Best to create and push repository yourself
 
 ## Create and build terminal commands
